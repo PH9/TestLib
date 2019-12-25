@@ -20,13 +20,13 @@
 		16518EC423B36CF2000CEE63 /* UIViewController+instantiateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16518EC223B36C53000CEE63 /* UIViewController+instantiateTests.swift */; };
 		16518EC823B3715F000CEE63 /* UIViewController+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16518EC723B3715F000CEE63 /* UIViewController+identifier.swift */; };
 		16518ECA23B37181000CEE63 /* UIViewController+identifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16518EC923B37181000CEE63 /* UIViewController+identifierTests.swift */; };
+		16518ECD23B372A0000CEE63 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6491923B34F000082CCB2 /* ViewControllerTests.swift */; };
 		16A6490323B34EFE0082CCB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6490223B34EFE0082CCB2 /* AppDelegate.swift */; };
 		16A6490523B34EFE0082CCB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6490423B34EFE0082CCB2 /* SceneDelegate.swift */; };
 		16A6490723B34EFE0082CCB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6490623B34EFE0082CCB2 /* ViewController.swift */; };
 		16A6490A23B34EFE0082CCB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A6490823B34EFE0082CCB2 /* Main.storyboard */; };
 		16A6490C23B34F000082CCB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A6490B23B34F000082CCB2 /* Assets.xcassets */; };
 		16A6490F23B34F000082CCB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A6490D23B34F000082CCB2 /* LaunchScreen.storyboard */; };
-		16A6491A23B34F000082CCB2 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6491923B34F000082CCB2 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +107,7 @@
 		16A6491023B34F000082CCB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16A6491523B34F000082CCB2 /* TestLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A6491923B34F000082CCB2 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
-		16A6491B23B34F000082CCB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16A6491B23B34F000082CCB2 /* TestsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestsInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +160,7 @@
 				16518E9E23B365FB000CEE63 /* TestsInfo.plist */,
 				16518EBC23B36687000CEE63 /* Tracker.swift */,
 				16518E9C23B365FB000CEE63 /* TrackerTests.swift */,
-				16518EC723B3715F000CEE63 /* UIViewController+identifier.swift */,
-				16518EC923B37181000CEE63 /* UIViewController+identifierTests.swift */,
-				16518EC023B36C26000CEE63 /* UIViewController+instantiate.swift */,
-				16518EC223B36C53000CEE63 /* UIViewController+instantiateTests.swift */,
+				16518ECE23B372B8000CEE63 /* Extension */,
 			);
 			path = TestLibCore;
 			sourceTree = "<group>";
@@ -177,11 +174,21 @@
 			path = TestLibTest;
 			sourceTree = "<group>";
 		};
+		16518ECE23B372B8000CEE63 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				16518EC723B3715F000CEE63 /* UIViewController+identifier.swift */,
+				16518EC923B37181000CEE63 /* UIViewController+identifierTests.swift */,
+				16518EC023B36C26000CEE63 /* UIViewController+instantiate.swift */,
+				16518EC223B36C53000CEE63 /* UIViewController+instantiateTests.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		16A648F623B34EFE0082CCB2 = {
 			isa = PBXGroup;
 			children = (
 				16A6490123B34EFE0082CCB2 /* TestLib */,
-				16A6491823B34F000082CCB2 /* TestLibTests */,
 				16518E8E23B365FB000CEE63 /* TestLibCore */,
 				16518EB123B36611000CEE63 /* TestLibTest */,
 				16A6490023B34EFE0082CCB2 /* Products */,
@@ -203,24 +210,17 @@
 		16A6490123B34EFE0082CCB2 /* TestLib */ = {
 			isa = PBXGroup;
 			children = (
+				16A6491023B34F000082CCB2 /* Info.plist */,
+				16A6491B23B34F000082CCB2 /* TestsInfo.plist */,
 				16A6490223B34EFE0082CCB2 /* AppDelegate.swift */,
 				16A6490423B34EFE0082CCB2 /* SceneDelegate.swift */,
 				16A6490623B34EFE0082CCB2 /* ViewController.swift */,
-				16A6490823B34EFE0082CCB2 /* Main.storyboard */,
+				16A6491923B34F000082CCB2 /* ViewControllerTests.swift */,
 				16A6490B23B34F000082CCB2 /* Assets.xcassets */,
 				16A6490D23B34F000082CCB2 /* LaunchScreen.storyboard */,
-				16A6491023B34F000082CCB2 /* Info.plist */,
+				16A6490823B34EFE0082CCB2 /* Main.storyboard */,
 			);
 			path = TestLib;
-			sourceTree = "<group>";
-		};
-		16A6491823B34F000082CCB2 /* TestLibTests */ = {
-			isa = PBXGroup;
-			children = (
-				16A6491923B34F000082CCB2 /* ViewControllerTests.swift */,
-				16A6491B23B34F000082CCB2 /* Info.plist */,
-			);
-			path = TestLibTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,7 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A6491A23B34F000082CCB2 /* ViewControllerTests.swift in Sources */,
+				16518ECD23B372A0000CEE63 /* ViewControllerTests.swift in Sources */,
 				16518ECA23B37181000CEE63 /* UIViewController+identifierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -828,7 +828,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestLibTests/Info.plist;
+				INFOPLIST_FILE = TestLib/TestsInfo.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -849,7 +849,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestLibTests/Info.plist;
+				INFOPLIST_FILE = TestLib/TestsInfo.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
