@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		16518E9623B365FB000CEE63 /* TestLibCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16518E8D23B365FB000CEE63 /* TestLibCore.framework */; };
-		16518E9D23B365FB000CEE63 /* TestLibCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16518E9C23B365FB000CEE63 /* TestLibCoreTests.swift */; };
 		16518E9F23B365FB000CEE63 /* TestLibCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 16518E8F23B365FB000CEE63 /* TestLibCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16518EA223B365FB000CEE63 /* TestLibCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16518E8D23B365FB000CEE63 /* TestLibCore.framework */; };
 		16518EA323B365FB000CEE63 /* TestLibCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16518E8D23B365FB000CEE63 /* TestLibCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16518EB423B36611000CEE63 /* TestLibTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 16518EB223B36611000CEE63 /* TestLibTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16518EB723B36611000CEE63 /* TestLibTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16518EB023B36611000CEE63 /* TestLibTest.framework */; };
 		16518EB823B36611000CEE63 /* TestLibTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16518EB023B36611000CEE63 /* TestLibTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16518EBD23B36687000CEE63 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16518EBC23B36687000CEE63 /* Tracker.swift */; };
+		16518EBF23B3671D000CEE63 /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16518E9C23B365FB000CEE63 /* TrackerTests.swift */; };
+		16518EC123B36C26000CEE63 /* ViewController+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16518EC023B36C26000CEE63 /* ViewController+identifier.swift */; };
+		16518EC423B36CF2000CEE63 /* ViewController+identifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16518EC223B36C53000CEE63 /* ViewController+identifierTests.swift */; };
 		16A6490323B34EFE0082CCB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6490223B34EFE0082CCB2 /* AppDelegate.swift */; };
 		16A6490523B34EFE0082CCB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6490423B34EFE0082CCB2 /* SceneDelegate.swift */; };
 		16A6490723B34EFE0082CCB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A6490623B34EFE0082CCB2 /* ViewController.swift */; };
@@ -82,11 +85,14 @@
 		16518E8F23B365FB000CEE63 /* TestLibCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLibCore.h; sourceTree = "<group>"; };
 		16518E9023B365FB000CEE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16518E9523B365FB000CEE63 /* TestLibCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestLibCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		16518E9C23B365FB000CEE63 /* TestLibCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLibCoreTests.swift; sourceTree = "<group>"; };
-		16518E9E23B365FB000CEE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16518E9C23B365FB000CEE63 /* TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTests.swift; sourceTree = "<group>"; };
+		16518E9E23B365FB000CEE63 /* TestsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestsInfo.plist; sourceTree = "<group>"; };
 		16518EB023B36611000CEE63 /* TestLibTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestLibTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16518EB223B36611000CEE63 /* TestLibTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLibTest.h; sourceTree = "<group>"; };
 		16518EB323B36611000CEE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16518EBC23B36687000CEE63 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		16518EC023B36C26000CEE63 /* ViewController+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+identifier.swift"; sourceTree = "<group>"; };
+		16518EC223B36C53000CEE63 /* ViewController+identifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+identifierTests.swift"; sourceTree = "<group>"; };
 		16A648FF23B34EFE0082CCB2 /* TestLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A6490223B34EFE0082CCB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16A6490423B34EFE0082CCB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,17 +153,13 @@
 			children = (
 				16518E8F23B365FB000CEE63 /* TestLibCore.h */,
 				16518E9023B365FB000CEE63 /* Info.plist */,
+				16518E9E23B365FB000CEE63 /* TestsInfo.plist */,
+				16518EBC23B36687000CEE63 /* Tracker.swift */,
+				16518E9C23B365FB000CEE63 /* TrackerTests.swift */,
+				16518EC023B36C26000CEE63 /* ViewController+identifier.swift */,
+				16518EC223B36C53000CEE63 /* ViewController+identifierTests.swift */,
 			);
 			path = TestLibCore;
-			sourceTree = "<group>";
-		};
-		16518E9B23B365FB000CEE63 /* TestLibCoreTests */ = {
-			isa = PBXGroup;
-			children = (
-				16518E9C23B365FB000CEE63 /* TestLibCoreTests.swift */,
-				16518E9E23B365FB000CEE63 /* Info.plist */,
-			);
-			path = TestLibCoreTests;
 			sourceTree = "<group>";
 		};
 		16518EB123B36611000CEE63 /* TestLibTest */ = {
@@ -175,7 +177,6 @@
 				16A6490123B34EFE0082CCB2 /* TestLib */,
 				16A6491823B34F000082CCB2 /* TestLibTests */,
 				16518E8E23B365FB000CEE63 /* TestLibCore */,
-				16518E9B23B365FB000CEE63 /* TestLibCoreTests */,
 				16518EB123B36611000CEE63 /* TestLibTest */,
 				16A6490023B34EFE0082CCB2 /* Products */,
 			);
@@ -343,6 +344,7 @@
 				TargetAttributes = {
 					16518E8C23B365FB000CEE63 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					16518E9423B365FB000CEE63 = {
 						CreatedOnToolsVersion = 11.3;
@@ -428,6 +430,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16518EBD23B36687000CEE63 /* Tracker.swift in Sources */,
+				16518EC123B36C26000CEE63 /* ViewController+identifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +439,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16518E9D23B365FB000CEE63 /* TestLibCoreTests.swift in Sources */,
+				16518EBF23B3671D000CEE63 /* TrackerTests.swift in Sources */,
+				16518EC423B36CF2000CEE63 /* ViewController+identifierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +522,7 @@
 		16518EA523B365FB000CEE63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -533,6 +539,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.ph9.TestLibCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -543,6 +550,7 @@
 		16518EA623B365FB000CEE63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -571,7 +579,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestLibCoreTests/Info.plist;
+				INFOPLIST_FILE = TestLibCore/TestsInfo.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,7 +598,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestLibCoreTests/Info.plist;
+				INFOPLIST_FILE = TestLibCore/TestsInfo.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -773,6 +781,7 @@
 		16A6491F23B34F000082CCB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestLib/Info.plist;
@@ -790,6 +799,7 @@
 		16A6492023B34F000082CCB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestLib/Info.plist;

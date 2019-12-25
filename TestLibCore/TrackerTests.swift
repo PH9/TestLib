@@ -1,34 +1,24 @@
-//
-//  TestLibCoreTests.swift
-//  TestLibCoreTests
-//
-//  Created by Wasith Theerapattrathamrong on 25/12/19.
-//  Copyright © 2019 Ayudhya Capital Auto Lease Plc. All rights reserved.
-//
-
 import XCTest
 @testable import TestLibCore
 
 class TestLibCoreTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    class SpyShouldBeActualTracker: ShouldBeActualTracker {
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+        var latestEvent: String?
+        var sendCalledCount = 0
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        override func send(event: String) {
+            sendCalledCount += 1
+            latestEvent = event
         }
     }
 
+    func testCalledSend() {
+        let spy = SpyShouldBeActualTracker()
+        Tracker.standard.send(tracker: spy, event: "DUMMY")
+
+        XCTAssertEqual(1, spy.sendCalledCount)
+        XCTAssertEqual("DUMMY", spy.latestEvent)
+    }
 }

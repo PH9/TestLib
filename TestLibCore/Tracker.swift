@@ -1,9 +1,24 @@
-//
-//  Tracker.swift
-//  TestLibCore
-//
-//  Created by Wasith Theerapattrathamrong on 25/12/19.
-//  Copyright © 2019 Ayudhya Capital Auto Lease Plc. All rights reserved.
-//
+public protocol Tracking {
 
-import Foundation
+    func send(event: String)
+}
+
+public class Tracker {
+
+    public static let standard = Tracker()
+
+    public func send(tracker: Tracking = ShouldBeActualTracker.shared, event: String) {
+        tracker.send(event: "\(event)")
+    }
+}
+
+public class ShouldBeActualTracker {
+
+    public static let shared = ShouldBeActualTracker()
+
+    public func send(event: String) {
+        print("send \(event)")
+    }
+}
+
+extension ShouldBeActualTracker: Tracking {}
