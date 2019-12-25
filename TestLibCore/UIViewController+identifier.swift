@@ -1,6 +1,8 @@
 import UIKit
 
-public protocol Identifiable {
+// MARK: - Identifiable
+
+public protocol Identifiable: AnyObject {
 
     static var identifier: String { get }
 }

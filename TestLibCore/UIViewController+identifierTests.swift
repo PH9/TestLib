@@ -9,5 +9,4 @@ class ViewControllerIdentifierTests: XCTestCase {
         XCTAssertEqual("UIViewController", UIViewController.identifier)
         XCTAssertEqual("MyCustomClassNameViewController", MyCustomClassNameViewController.identifier)
     }
-
 }
