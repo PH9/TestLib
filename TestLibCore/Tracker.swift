@@ -3,11 +3,13 @@ public protocol Tracking {
     func send(event: String)
 }
 
-public class Tracker {
+open class Tracker {
 
-    public static let standard = Tracker()
+    public static var standard = Tracker()
 
-    public func send(tracker: Tracking = ShouldBeActualTracker.shared, event: String) {
+    public init() {}
+
+    open func send(tracker: Tracking = ShouldBeActualTracker.shared, event: String) {
         tracker.send(event: "\(event)")
     }
 }
